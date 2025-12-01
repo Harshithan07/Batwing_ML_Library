@@ -30,7 +30,7 @@ __all__ = [
     "evaluate_regression_model",
     "run_nested_cv_multiclass_classification",
     "hyperparameter_tuning_multiclass_classification",
-    "evaluate_multiclass_classification_model",
+    "evaluate_multiclass_classification",
     "summary_dataframe",
     "summary_column",
     "prepare_sample_split",

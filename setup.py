@@ -1,10 +1,14 @@
+from pathlib import Path
 from setuptools import setup, find_packages
+
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="batwing-ml",
     version="0.1.0",
     description="Batwing ML: A Functional machine learning library for fast, visual, and parameter-driven modeling.",
-    long_description=open("README.md").read(),
+    long_description=long_description,
     long_description_content_type="text/markdown",
     author="Harshithan Kavitha Sukumar",
     author_email="harshithan.ks2002@gmail.com",
@@ -25,7 +29,7 @@ setup(
         "matplotlib",
         "seaborn",
         "tabulate",
-        "rich"
+        "rich",
     ],
     classifiers=[
         "Development Status :: 4 - Beta",

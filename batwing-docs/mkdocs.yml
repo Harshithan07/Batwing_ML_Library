@@ -1,0 +1,94 @@
+site_name: Batwing ML
+site_url: https://harshithan07.github.io/batwing-ml/
+repo_url: https://github.com/Harshithan07/batwing-ml
+repo_name: Harshithan07/batwing-ml
+
+site_description: Functional, Low-Code, Parameter-Driven Machine Learning Library
+site_author: Harshithan Kavitha Sukumar
+
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.png
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    - scheme: default
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.expand
+    - navigation.instant
+    - navigation.top
+    - content.code.annotate
+    - content.tabs.link
+    - search.highlight
+    - toc.follow
+
+nav:
+  - Home: index.html
+  - Getting Started: getting_started.md
+  - Usage:
+      - Classification: usage/classification.md
+      - Regression: usage/regression.md
+      - Multiclass Classification: usage/multiclass.md
+      - EDA & Preprocessing: usage/exploratory.md
+  - API Reference:
+      - EDA & Preprocessing:
+          - Overview: reference/eda/overview.md
+          - summary_dataframe: reference/eda/summary_dataframe.md
+          - summary_column: reference/eda/summary_column.md
+          - prepare_sample_split: reference/eda/prepare_sample_split.md
+          - validate_and_clean_data: reference/eda/validate_and_clean_data.md
+          - feature_exploration: reference/eda/feature_exploration.md
+          - feature_engineering: reference/eda/feature_engineering.md
+          - preprocess_dataframe: reference/eda/preprocess_dataframe.md
+          - preprocess_column: reference/eda/preprocess_column.md
+      - Classification:
+          - Overview: reference/classification/overview.md
+          - Nested CV: reference/classification/nested_cv_classification.md
+          - Hyperparameter Tuning: reference/classification/hyperparameter_tuning_classification.md
+          - Evaluation: reference/classification/evaluate_classification_model.md
+      - Regression:
+          - Overview: reference/regression/overview.md
+          - Nested CV: reference/regression/nested_cv_regression.md
+          - Hyperparameter Tuning: reference/regression/hyperparameter_tuning_regression.md
+          - Evaluation: reference/regression/evaluate_regression.md
+      - Multiclass Classification:
+          - Overview: reference/multiclass/overview.md
+          - Nested CV: reference/multiclass/nested_cv_multiclass_classification.md
+          - Hyperparameter Tuning: reference/multiclass/hyperparameter_tuning_multiclass_classification.md
+          - Evaluation: reference/multiclass/evaluate_multiclass_classification.md
+  - Contributing: contributing.md
+  - Changelog: changelog.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - footnotes
+  - codehilite
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed
+  - pymdownx.emoji
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Harshithan07/batwing-ml
+    - icon: fontawesome/solid/envelope
+      link: mailto:harshithan.ks2002@gmail.com

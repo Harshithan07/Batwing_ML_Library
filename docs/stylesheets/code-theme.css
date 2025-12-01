@@ -1,0 +1,27 @@
+/* Code blocks in LIGHT mode */
+[data-md-color-scheme="default"] {
+    /* background / foreground */
+    --md-code-bg-color: #0b1020;         /* deep navy */
+    --md-code-fg-color: #e5e7eb;         /* light gray */
+  
+    /* highlight background */
+    --md-code-hl-color: rgba(45, 212, 191, 0.15);
+  
+    /* token colors */
+    --md-code-hl-keyword-color: #22d3ee;   /* keywords */
+    --md-code-hl-string-color:  #4ade80;   /* strings */
+    --md-code-hl-number-color:  #f97316;   /* numbers */
+  }
+  
+  /* Code blocks in DARK mode (slate) */
+  [data-md-color-scheme="slate"] {
+    --md-code-bg-color: #020617;
+    --md-code-fg-color: #e5e7eb;
+  
+    --md-code-hl-color: rgba(56, 189, 248, 0.18);
+  
+    --md-code-hl-keyword-color: #22d3ee;
+    --md-code-hl-string-color:  #a3e635;
+    --md-code-hl-number-color:  #fb7185;
+  }
+  

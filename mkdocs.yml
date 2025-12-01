@@ -1,0 +1,86 @@
+site_name: BATWING ML LIBRARY 
+site_description: "A Functional machine learning library for fast, visual, and parameter-driven modeling."
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+    - search.highlight
+    - search.suggest
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: JetBrains Mono
+  logo: assets/logo-light.png
+  favicon: assets/favicon.png
+
+repo_url: https://github.com/Harshithan07/Batwing_ML_Library
+repo_name: batwing-ml-library
+
+extra:
+  generator: false  
+
+  copyright: "© 2025 Harshithan Kavitha Sukumar. All rights reserved."
+
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Harshithan07
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/harshithan-ks/
+      name: LinkedIn
+    - icon: fontawesome/solid/envelope
+      link: mailto:harshithan.ks2002@gmail.com
+      name: Email
+
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["."]
+          options:
+            show_source: false
+            docstring_style: google
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Guides:
+      - Tabular Classification: guides/classification-workflow.md
+      - Regression: guides/regression-workflow.md
+      - Large Datasets & Fast Mode: guides/large-datasets-and-fast-mode.md
+      - Notebooks & Visual Previews: guides/notebooks-and-visual-previews.md
+  - Data & Exploration:
+      - Data Validation & ETL: data-and-exploration/data-validation-etl.md
+      - Sampling & Splitting: data-and-exploration/sampling-and-splitting.md
+      - Summaries & Profiling: data-and-exploration/summaries-and-profiling.md
+      - Preprocessing: data-and-exploration/preprocessing.md
+      - Feature Exploration: data-and-exploration/feature-exploration.md
+      - Feature Engineering: data-and-exploration/feature-engineering.md
+  - Modeling:
+      - Binary Classification: modeling/binary-classification.md
+      - Multiclass Classification: modeling/multiclass-classification.md
+      - Regression: modeling/regression.md
+  - API Reference:
+      - Exploratory: api/exploratory.md
+      - Classification: api/classification.md
+      - Multiclass Classification: api/multiclass_classification.md
+      - Regression: api/regression.md
