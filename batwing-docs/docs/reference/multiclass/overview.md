@@ -1,5 +1,0 @@
-# Multiclass Classification
-
-::: batwing_ml.multiclass_classification.hyperparameter_tuning_multiclass_classification
-::: batwing_ml.multiclass_classification.nested_cv_multiclass_classification
-::: batwing_ml.multiclass_classification.evaluate_multiclass_classification

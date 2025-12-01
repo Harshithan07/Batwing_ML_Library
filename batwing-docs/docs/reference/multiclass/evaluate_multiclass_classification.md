@@ -1,3 +1,0 @@
-# evaluate_multiclass_classification
-
-::: batwing_ml.multiclass_classification.evaluate_multiclass_classification
